@@ -119,7 +119,7 @@ export const usePixelArtCard = ({ random, tags, color, children, }: usePixelArtC
         let tag;
         if (tags) {
             if (tags.length >= 2) {
-                tag = tags[getRandomValue(tags.length - 1)];
+                tag = tags[getRandomValue(tags.length )];
             }
             else if (tags.length == 1) {
                 tag = tags[0]

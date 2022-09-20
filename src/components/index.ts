@@ -1,5 +1,5 @@
 import { PixelArtCard  as PixelArcCardHOC} from './PixelArtCard';
-import { PixelArtCardHOCProps } from '../interfaces/interfaces';
+import { PixelArtCardHOCProps, HairTypes } from '../interfaces/interfaces';
 import { Eyes } from './objects/Eyes';
 import { Hair } from './objects/Hair';
 import { Nose } from './objects/Nose';
@@ -11,6 +11,7 @@ import { NeckAccessory } from './objects/NeckAccessory';
 import { MouthAccessory } from './objects/MouthAccessory';
 import { HeadAccessory } from './objects/HeadAccessory';
 
+
 export { Eyes } from './objects/Eyes';
 export { Hair } from './objects/Hair';
 export { Nose } from './objects/Nose';
@@ -21,6 +22,12 @@ export { EarAccessory } from './objects/EarAccessory';
 export { NeckAccessory } from './objects/NeckAccessory';
 export { MouthAccessory } from './objects/MouthAccessory';
 export { HeadAccessory } from './objects/HeadAccessory';
+
+
+export { colorsData } from '../data/colorsData';
+export { PixelArtFace } from './PixelArtFace';
+export { itemsData } from '../data/itemsData';
+
 
 export const PixelArtCard : PixelArtCardHOCProps = Object.assign( PixelArcCardHOC , {
     Eyes,

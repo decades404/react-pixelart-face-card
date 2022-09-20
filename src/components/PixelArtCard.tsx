@@ -42,7 +42,7 @@ export const PixelArtCard = ({size,children, style, color, random = false, tags,
      //   className={styles.mainContainer}
      onMouseOver={onHover}
      onMouseLeave={onLeave}
-        style={{...style, width:newWidth, height: newHeight}}
+        style={{ width:newWidth, height: newHeight, ...style,}}
       >
       
         <PixelArtFace color={color ? color: randomColor} hover={hover} hoverColor={hoverColor} isHover={isHover}/>
