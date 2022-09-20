@@ -6,6 +6,7 @@ import { PixelArtCard } from '../.';
 const App = () => {
   return (
     <>
+      <p>React PixelArt Face Card</p>
       <p>Random</p>
       <PixelArtCard random={true} tags={['human-female', 'human-male']} />
       <p>Custom Values</p>

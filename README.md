@@ -1,5 +1,12 @@
 # React Pixel Art Face Card
+A Pixel Art card React Component .
 
+
+## Installation
+
+`npm install react-pixelart-face-card --save`
+
+## Example
 
 ```
    import { PixelArtCard } from 'react-pixelart-face-card'
