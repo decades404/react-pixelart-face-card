@@ -81,13 +81,19 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
                 typeKeys = Object.keys(getItemsData());
         }
         const randomItemKey = getRandomValue(typeKeys.length);
-        console.log("random", randomItemKey)
-
+  
         /* DATA ITEMS */
-        const itemKey: any = value ? value.toString()  : typeKeys[randomItemKey];
-
-
-        const data = _dataItems[itemKey].data.replaceAll('#color', _color);
+        let data;
+        if(value) {
+            const itemData = itemsData[objectType][value.toString()] ? itemsData[objectType][value.toString()]   : itemsData[objectType]['none']
+            data = itemData.data.replaceAll('#color', _color);
+        }
+        else {
+            const itemKey: any = typeKeys[randomItemKey];
+            data = _dataItems[itemKey].data.replaceAll('#color', _color);
+        }
+        
+    
         setData(data)
     }
 

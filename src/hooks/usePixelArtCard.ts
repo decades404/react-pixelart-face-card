@@ -137,7 +137,6 @@ export const usePixelArtCard = ({ random, tags, color, children, }: usePixelArtC
 
         React.Children.map(children, (child) => {
             if (React.isValidElement(child) && isFunction(child.type)) {
-                console.log("child", child)
                 childrenComps[child.type.name] = true
             }
         });
