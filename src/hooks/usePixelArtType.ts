@@ -16,11 +16,20 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
 
     const [data, setData] = useState('');
 
+    const getItemsData = () => {
+
+        let items = itemsData[objectType];
+
+        items['none'] && delete items['none'];
+
+        return items;
+    }
+
     const getItemsByTags = (tags: string[]) => {
 
         let itemsToReturn: any= {};
 
-        const items = itemsData[objectType];
+        const items = getItemsData();
 
         Object.entries(items).map( ([key, item]) => {
             tags.map( tag => {
@@ -44,7 +53,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
 
         let _dataItems;
         if(value){
-            _dataItems = itemsData[objectType]
+            _dataItems = getItemsData()
         }
         else {
             if(tags && tags.length >= 1){
@@ -56,7 +65,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
                     _dataItems = getItemsByTags(HOCtags) ;
                 }
                 else {
-                    _dataItems = itemsData[objectType];
+                    _dataItems =  getItemsData();
                 }
             }
         }
@@ -68,10 +77,10 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
         let typeKeys = Object.keys(_dataItems);
 
         if (typeKeys.length == 0){
-                _dataItems = itemsData[objectType]
-                typeKeys = Object.keys(itemsData[objectType]);
+                _dataItems = getItemsData()
+                typeKeys = Object.keys(getItemsData());
         }
-        const randomItemKey = getRandomValue(typeKeys.length, 1);
+        const randomItemKey = getRandomValue(typeKeys.length);
 
         /* DATA ITEMS */
         const itemKey: any = value ? value.toString()  : typeKeys[randomItemKey];
