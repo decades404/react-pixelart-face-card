@@ -27,6 +27,7 @@ export { HeadAccessory } from './objects/HeadAccessory';
 export { colorsData } from '../data/colorsData';
 export { PixelArtFace } from './PixelArtFace';
 export { itemsData } from '../data/itemsData';
+export { Layer } from './Layer';
 
 
 export const PixelArtCard : PixelArtCardHOCProps = Object.assign( PixelArcCardHOC , {
