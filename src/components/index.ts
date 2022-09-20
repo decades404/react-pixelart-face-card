@@ -24,7 +24,7 @@ export { MouthAccessory } from './objects/MouthAccessory';
 export { HeadAccessory } from './objects/HeadAccessory';
 
 
-export { colorsData } from '../data/colorsData';
+export { colorsData, skinTonesData } from '../data/colorsData';
 export { PixelArtFace } from './PixelArtFace';
 export { itemsData } from '../data/itemsData';
 export { Layer } from './Layer';
