@@ -24,6 +24,11 @@ const tags = [
 
 
 const eyesItems : {[key in  EyesTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'eyes-1': {
         data: `10em 11em #color, 11em 11em #color, 17em 11em #color, 18em 11em #color, 10em 12em black, 11em 12em #efebe9, 17em 12em black, 18em 12em #efebe9`,
         defaultColor: '#4e342e',
@@ -38,6 +43,11 @@ const eyesItems : {[key in  EyesTypes ] : DataItem } = {
 }
 
 const eyesAccesoryItems: {[key in  EyesAccessoryTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'eyes-accessory-1': {
         data: `9em 10em #color, 10em 10em #color, 11em 10em #color, 12em 10em #color, 13em 10em #color, 14em 10em #color, 15em 10em #color, 16em 10em #color, 17em 10em #color, 18em 10em #color, 19em 10em #color, 5em 11em #color, 6em 11em #color, 7em 11em #color, 8em 11em #color, 9em 11em #color, 10em 11em #color, 11em 11em #color, 12em 11em #color, 13em 11em #color, 15em 11em #color, 16em 11em #color, 17em 11em #color, 18em 11em #color, 19em 11em #color, 20em 11em #color, 10em 12em #color, 11em 12em #color, 12em 12em #color, 16em 12em #color, 17em 12em #color, 18em 12em #color, 11em 13em #color, 17em 13em #color `,
         defaultColor: '#4e342e',
@@ -99,6 +109,11 @@ const eyesAccesoryItems: {[key in  EyesAccessoryTypes ] : DataItem } = {
 }
 
 const hairItems : {[key in  HairTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'hair-1': {
         data: ` `,
         defaultColor: '#4e342e',
@@ -260,7 +275,11 @@ const hairItems : {[key in  HairTypes ] : DataItem } = {
   
 }
 const headAccessoryItems : {[key in  HeadAccessoryTypes ] : DataItem } = {
-
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'head-accessory-1': {
         data: `9em 5em #color, 10em 5em #color, 11em 5em #color, 12em 5em #color, 13em 5em #color, 14em 5em #color, 15em 5em #color, 16em 5em #color, 17em 5em #color, 8em 6em #color, 9em 6em #color, 10em 6em #color, 11em 6em #color, 12em 6em #color, 13em 6em #color, 14em 6em #color, 15em 6em #color, 16em 6em #color, 17em 6em #color, 18em 6em #color, 7em 7em #color, 8em 7em #color, 9em 7em #color, 10em 7em #color, 11em 7em #color, 12em 7em #color, 13em 7em #color, 14em 7em #color, 15em 7em #color, 16em 7em #color, 17em 7em #color, 18em 7em #color, 7em 8em #color, 8em 8em #color, 9em 8em #color, 10em 8em #color, 11em 8em #color, 12em 8em #color, 13em 8em #color, 14em 8em #color, 15em 8em #color, 16em 8em #color, 17em 8em #color, 18em 8em #color`,
         defaultColor: '#4e342e',
@@ -347,6 +366,11 @@ const headAccessoryItems : {[key in  HeadAccessoryTypes ] : DataItem } = {
 }
 
 const noseItems : {[key in  NoseTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'nose-1': {
         data: `14em 15em black, 15em 15em black`,
         defaultColor: '#4e342e',
@@ -365,6 +389,11 @@ const noseItems : {[key in  NoseTypes ] : DataItem } = {
 }
 
 const mouthItems : {[key in  MouthTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'mouth-1': {
         data: `13em 18em black, 14em 18em black, 15em 18em black`,
         defaultColor: '#4e342e',
@@ -396,6 +425,11 @@ const mouthItems : {[key in  MouthTypes ] : DataItem } = {
 }
 
 const mouthAccessoryItems : {[key in  MouthAccessoryTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'mouth-accessory-1': {
         data: `21em 12em #bdbdbd, 21em 13em #bdbdbd, 22em 14em #bdbdbd, 21em 15em #bdbdbd, 15em 17em black, 16em 17em black, 17em 17em black, 18em 17em black, 19em 17em black, 20em 17em black, 21em 17em black, 22em 17em black, 15em 18em #bdbdbd, 16em 18em #bdbdbd, 17em 18em #bdbdbd, 18em 18em #bdbdbd, 19em 18em #bdbdbd, 20em 18em #bdbdbd, 21em 18em #ff6d00, 22em 18em black, 15em 19em black, 16em 19em black, 17em 19em black, 18em 19em black, 19em 19em black, 20em 19em black, 21em 19em black, 22em 19em black `,
         defaultColor: '#4e342e',
@@ -420,6 +454,11 @@ const mouthAccessoryItems : {[key in  MouthAccessoryTypes ] : DataItem } = {
     
 }
 const beardItems : {[key in  BeardTypes ] : DataItem } = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'beard-1': {
         data: `8em 16em #5d4037, 18em 16em #5d4037, 8em 17em #5d4037, 18em 17em #5d4037, 8em 18em #5d4037, 9em 18em #5d4037, 10em 18em #5d4037, 18em 18em #5d4037, 9em 19em #5d4037, 10em 19em #5d4037, 11em 19em #5d4037, 18em 19em #5d4037, 9em 20em #5d4037, 11em 20em #5d4037, 12em 20em #5d4037, 13em 20em #5d4037, 14em 20em #5d4037, 15em 20em #5d4037, 16em 20em #5d4037, 17em 20em #5d4037, 12em 21em #5d4037, 13em 21em #5d4037, 14em 21em #5d4037, 15em 21em #5d4037, 16em 21em #5d4037`,
         defaultColor: '#4e342e',
@@ -481,6 +520,11 @@ const beardItems : {[key in  BeardTypes ] : DataItem } = {
 
 
 const earAccessoryItems : {[key in  EarAccessoryTypes ] : DataItem }  = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'ear-accessory-1': {
         data: `6em 15em #color`,
         defaultColor: '#4e342e',
@@ -510,6 +554,11 @@ const earAccessoryItems : {[key in  EarAccessoryTypes ] : DataItem }  = {
 }
 
 const neckAccessoryItems : {[key in  NeckAccessoryTypes ] : DataItem }  = {
+    'none': {
+        data: ``,
+        defaultColor: '',
+        tags: ['all']
+    },
     'neck-accessory-1': {
         data: `7em 21em #color, 8em 22em #color, 9em 23em #color, 10em 24em #color`,
         defaultColor: '#4e342e',
@@ -535,9 +584,6 @@ const neckAccessoryItems : {[key in  NeckAccessoryTypes ] : DataItem }  = {
         defaultColor: '#4e342e',
         tags: ['all' ]
     },
-    
-  
-   
 }
 
 export const itemsData = {
