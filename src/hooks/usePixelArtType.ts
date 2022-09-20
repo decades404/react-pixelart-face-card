@@ -18,7 +18,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
 
     const getItemsData = () => {
 
-        let items = itemsData[objectType];
+        let items = {...itemsData[objectType]};
 
         items['none'] && delete items['none'];
 
