@@ -81,6 +81,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
                 typeKeys = Object.keys(getItemsData());
         }
         const randomItemKey = getRandomValue(typeKeys.length);
+        console.log("random", randomItemKey)
 
         /* DATA ITEMS */
         const itemKey: any = value ? value.toString()  : typeKeys[randomItemKey];
