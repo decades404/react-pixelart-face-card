@@ -1,0 +1,38 @@
+
+.mainContainer, .container {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.mainContainer{
+    height: 300px;
+    background-color: transparent;
+    position: relative;
+}
+
+.container{
+    height: 100%;
+    position: absolute;
+}
+
+.tileContainer{
+    line-height: 0;
+    min-height: 1px;
+    margin: 0 auto;
+    width: 100%;
+    touch-action: none;
+}
+.tile{
+    float: left;
+    border: 1px solid #585858;
+    border-width: 0 1px 1px 0;
+    width: 10%;
+    padding-bottom: 4%;
+    background-color: red;
+}
+
