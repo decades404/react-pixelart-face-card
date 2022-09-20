@@ -1,5 +1,5 @@
 import { PixelArtCard  as PixelArcCardHOC} from './PixelArtCard';
-import { PixelArtCardHOCProps, HairTypes } from '../interfaces/interfaces';
+import { PixelArtCardHOCProps } from '../interfaces/interfaces';
 import { Eyes } from './objects/Eyes';
 import { Hair } from './objects/Hair';
 import { Nose } from './objects/Nose';
