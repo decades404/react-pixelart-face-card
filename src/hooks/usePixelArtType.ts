@@ -45,7 +45,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
 
     useEffect(() => {
         setItemData();
-    }, [])
+    }, [value])
 
     const setItemData = () => {
 
@@ -85,9 +85,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
         /* DATA ITEMS */
         let data;
         if(value) {
-            console.log("value", value.toString());
-            console.log("itemsData", itemsData[objectType]);
-                
+     
             const itemData = itemsData[objectType][value.toString()] ? itemsData[objectType][value.toString()]   : itemsData[objectType]['none']
             data = itemData.data.replaceAll('#color', _color);
         }
