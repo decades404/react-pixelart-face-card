@@ -56,8 +56,11 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
 
     const setItemDataColor = () => {
         if(color){
-            const _data = rawData.replaceAll('#color', color);
-            setData(_data);
+            if(data!= '' && rawData != ''){
+                const _data = rawData.replaceAll('#color', color);
+                setData(_data);
+            }
+         
         }
     
     }
