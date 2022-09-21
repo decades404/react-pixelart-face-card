@@ -15,6 +15,7 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
     const { HOCtags } = useContext(PixelArtCardContext)
 
     const [data, setData] = useState('');
+    const [rawData, setRawData] = useState('');
 
     const getItemsData = () => {
 
@@ -46,6 +47,20 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
     useEffect(() => {
         setItemData();
     }, [value])
+
+    useEffect(() => {
+        setItemDataColor();
+        
+      
+    }, [color])
+
+    const setItemDataColor = () => {
+        if(color){
+            const _data = rawData.replaceAll('#color', color);
+            setData(_data);
+        }
+    
+    }
 
     const setItemData = () => {
 
@@ -84,17 +99,20 @@ export const usePixelArtType = ({ color, value, objectType , tags }: usePixelArt
   
         /* DATA ITEMS */
         let data;
+        let _rawData;
         if(value) {
      
             const itemData = itemsData[objectType][value.toString()] ? itemsData[objectType][value.toString()]   : itemsData[objectType]['none']
             data = itemData.data.replaceAll('#color', _color);
+            _rawData = itemData.data;
         }
         else {
             const itemKey: any = typeKeys[randomItemKey];
             data = _dataItems[itemKey].data.replaceAll('#color', _color);
+            _rawData = _dataItems[itemKey].data
         }
         
-    
+        setRawData(_rawData);
         setData(data)
     }
 
