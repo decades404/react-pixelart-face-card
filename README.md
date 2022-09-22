@@ -33,9 +33,9 @@ Here you can customize your Pixel Art card with a live preview.
 ```
 
 ```
-    <PixelArtCard  random={true}  tags={['human-female','human-male']}/>
+    <PixelArtCard random={true} size={200} tags={['human-female','human-male']}/>
 
-    <PixelArtCard color={'#efd0c9'}  tags={[ 'human-male']}>
+    <PixelArtCard color={'#efd0c9'}  size={200} tags={[ 'human-male']}>
         <PixelArtCard.Hair color='black' />
         <PixelArtCard.HeadAccessory />
         <PixelArtCard.Eyes />
