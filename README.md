@@ -13,6 +13,8 @@
 
 ## ⚙ Usage
 
+Create random and custom cards!
+
 Here you can customize your Pixel Art card with a live preview.
 
 <https://decades404.github.io/react-pixelart-face-card-docs/>
@@ -28,12 +30,16 @@ Here you can customize your Pixel Art card with a live preview.
    import { PixelArtCard } from 'react-pixelart-face-card'
 ```
 
+Random Card
 ```
     <PixelArtCard random={true} size={200} tags={['human-female','human-male']}/>
 
-    <PixelArtCard color={'#efd0c9'}  size={200} tags={[ 'human-male']}>
+```
+Custom Card
+```
+    <PixelArtCard color={'#efd0c9'}  size={200} tags={[ 'human-male']} hover={true} hoverColor={'red'}>
         <PixelArtCard.Hair color='black' />
-        <PixelArtCard.HeadAccessory />
+        <PixelArtCard.HeadAccessory  />
         <PixelArtCard.Eyes />
         <PixelArtCard.EyesAccessory/>
         <PixelArtCard.EarAccessory/>
@@ -41,9 +47,18 @@ Here you can customize your Pixel Art card with a live preview.
         <PixelArtCard.Beard />
         <PixelArtCard.Mouth/>
         <PixelArtCard.MouthAccessory />
-        <PixelArtCard.NeckAccessory />
+        <PixelArtCard.NeckAccessory value='neck-accessory-3'  color='blue'/>
     </PixelArtCard>
 ```
+Custom Card With Random Values
+```
+    <PixelArtCard color={'#efd0c9'}  size={200} tags={[ 'human-male']} hover={true} hoverColor={'red'}>
+        <PixelArtCard.Hair color='red' />
+    </PixelArtCard>
+```
+
+Get fun and create your own avatar!
+
 <div>
  <a href="https://www.npmjs.com/package/react-pixelart-face-card" alt="npm" title="npm">
   <img src="https://github.com/decades404/react-pixelart-face-card-docs/blob/main/public/wallpaper2.png?raw=true" title="npm" alt="Java" width="200" height="70"/>&nbsp;
